@@ -1,0 +1,127 @@
+{
+  "periodo": "periodo_1",
+  "generado_en": "2026-09-24T15:28:49.399456",
+  "variables": {
+    "capital_prestado": {
+      "tipo": "numerica",
+      "psi": 0.0476,
+      "ks_statistic": 0.0513,
+      "ks_pvalue": 0.1346,
+      "js_divergence": 0.0562,
+      "nivel": "OK"
+    },
+    "plazo_meses": {
+      "tipo": "numerica",
+      "psi": 0.3144,
+      "ks_statistic": 0.2489,
+      "ks_pvalue": 0.0,
+      "js_divergence": 0.2397,
+      "nivel": "CRITICO"
+    },
+    "edad_cliente": {
+      "tipo": "numerica",
+      "psi": 0.0186,
+      "ks_statistic": 0.0383,
+      "ks_pvalue": 0.4363,
+      "js_divergence": 0.053,
+      "nivel": "OK"
+    },
+    "salario_cliente": {
+      "tipo": "numerica",
+      "psi": 0.1757,
+      "ks_statistic": 0.1424,
+      "ks_pvalue": 0.0,
+      "js_divergence": 0.0424,
+      "nivel": "ALERTA"
+    },
+    "total_otros_prestamos": {
+      "tipo": "numerica",
+      "psi": 0.1012,
+      "ks_statistic": 0.09,
+      "ks_pvalue": 0.0005,
+      "js_divergence": 0.0447,
+      "nivel": "ALERTA"
+    },
+    "cuota_pactada": {
+      "tipo": "numerica",
+      "psi": 0.072,
+      "ks_statistic": 0.1224,
+      "ks_pvalue": 0.0,
+      "js_divergence": 0.1211,
+      "nivel": "ALERTA"
+    },
+    "puntaje_datacredito": {
+      "tipo": "numerica",
+      "psi": 0.0159,
+      "ks_statistic": 0.0318,
+      "ks_pvalue": 0.6715,
+      "js_divergence": 0.0738,
+      "nivel": "OK"
+    },
+    "cant_creditosvigentes": {
+      "tipo": "numerica",
+      "psi": 0.0163,
+      "ks_statistic": 0.0276,
+      "ks_pvalue": 0.8246,
+      "js_divergence": 0.0826,
+      "nivel": "OK"
+    },
+    "huella_consulta": {
+      "tipo": "numerica",
+      "psi": 0.0309,
+      "ks_statistic": 0.068,
+      "ks_pvalue": 0.0176,
+      "js_divergence": 0.0956,
+      "nivel": "ALERTA"
+    },
+    "saldo_mora": {
+      "tipo": "numerica",
+      "psi": 0.0,
+      "ks_statistic": 0.0042,
+      "ks_pvalue": 1.0,
+      "js_divergence": 0.0435,
+      "nivel": "OK"
+    },
+    "saldo_total": {
+      "tipo": "numerica",
+      "psi": 0.0076,
+      "ks_statistic": 0.0245,
+      "ks_pvalue": 0.9189,
+      "js_divergence": 0.0294,
+      "nivel": "OK"
+    },
+    "tipo_laboral": {
+      "tipo": "categorica",
+      "psi": 0.0001,
+      "chi2_statistic": 0.044725291154100955,
+      "chi2_pvalue": 0.8325099685472277,
+      "nivel": "OK"
+    },
+    "tipo_credito": {
+      "tipo": "categorica",
+      "psi": 0.0193,
+      "chi2_statistic": 8.506306028725989,
+      "chi2_pvalue": 0.13045166187598023,
+      "nivel": "OK"
+    },
+    "tendencia_ingresos": {
+      "tipo": "categorica",
+      "psi": 0.1106,
+      "chi2_statistic": 77.46328625819666,
+      "chi2_pvalue": 0.0007069773118440862,
+      "nivel": "ALERTA"
+    }
+  },
+  "alertas": [
+    "[CRITICO] plazo_meses: PSI=0.314, KS p-value=0.0000",
+    "[ALERTA] salario_cliente: PSI=0.176, KS p-value=0.0000",
+    "[ALERTA] total_otros_prestamos: PSI=0.101, KS p-value=0.0005",
+    "[ALERTA] cuota_pactada: PSI=0.072, KS p-value=0.0000",
+    "[ALERTA] huella_consulta: PSI=0.031, KS p-value=0.0176",
+    "[ALERTA] tendencia_ingresos: PSI=0.111, Chi2 p-value=0.0007069773118440862"
+  ],
+  "recomendacion": "ACCION REQUERIDA: 1 variable(s) con drift critico. Se recomienda re-entrenar el modelo y revisar el proceso de captura de datos.",
+  "fecha_inicio": "2025-07-12 08:51:24",
+  "fecha_fin": "2025-08-08 18:25:52",
+  "n_registros": 538
+}
