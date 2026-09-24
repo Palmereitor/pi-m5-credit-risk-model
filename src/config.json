@@ -1,0 +1,7 @@
+{
+  "project_code": "pi-m5-credit-risk",
+  "project_name": "Modelo Predictivo de Riesgo Crediticio",
+  "target_variable": "Pago_atiempo",
+  "author": "Daniel Palmera",
+  "description": "Modelo de clasificacion binaria para anticipar el comportamiento de pago de nuevos clientes de credito"
+}
